@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Training Videos</title>
+    </head>
+    <body>
+        
+        <script src="scripts/videoScript.js"></script> <!-- Links javascript file -->
+        <header><h1>Adnan Hussain, 06/12/2016</h1></header>
+        <section id ="videoContainer">
+            
+        <video id="video" width = 640 height = 480 poster ="images/poster.jpg"> <!-- adds video controls -->
+                <source src="video/MP4/blur.mp4"> <!-- makes video compatible with different browsers -->
+                <source src="video/webM/blur.webm">
+        </video>
+        
+        <div id="videoControls">
+            <button type="button" id="playPause">Play</button>
+            <button type="button" id="mute">Mute</button>
+            <input type="range" id="seekBar" min="1" max="100" step="1" value=”0”>
+            <input type="range" id="volumeSlider" min="1" max="100" step="1" value=”50”/>
+            <input type="text" readonly id="currentDuration" size="4"/>
+            <input type="text" readonly id="timeField" size="5">
+            
+        <select id="chooseSpeed">
+                <option value="0.5">0.5x</option>
+                <option value="0.75">0.75x</option>
+                <option value="1">1x</option>
+                <option value="1.25">1.25x</option>
+                <option value="1.5">1.5x</option>
+                <option value="1.75">1.75x</option>
+                <option value="2">2x</option>
+        </select>
+        
+            <button type="button" id="fastForward">Forward</button>
+            <button type="button" id="rewind">Rewind</button>
+            
+        </div>
+        
+        </section> <!-- videoContainer end -->
+    </body>
+</html>
